@@ -6,7 +6,7 @@ pipeline {
         timeout(time: 1, unit : 'HOURS')
         disableConcurrentBuilds()
     }
-    Parameters {
+    parameters {
         string(name: 'PERSON' , defaultValue: 'Jenkins', description: 'Hi')
         text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some info')
         booleanParam(name: 'TOGGLE', defaultValue: true, description: 'Toggle this value')
